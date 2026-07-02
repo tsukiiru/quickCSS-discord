@@ -1,0 +1,161 @@
+/*
+* {
+    font-size: 0;
+
+    ::before {
+        content: "████████    ███████ ██████████████████████ ██";
+        position: absolute;
+    }
+
+    ::after {
+        content: "██ ██████ █ █";
+        position: absolute;
+    }
+}
+
+*/
+
+@import url("https://raw.githubusercontent.com/computer-catt/PurplePrune/refs/heads/main/PurplePrune.css");
+@import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
+@import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css");
+
+/* config header */
+:root,
+.theme-dark {
+  /* if backgrounds are enabled this acts as a background tint*/
+  --window-tint: #0005;
+
+  /* Theme Background, replace with none if you want transparency*/
+  --theme-background-image: url(./Girls-Last-Tour-3.webp);
+
+  /* Works best with background enabled ^ */
+  /* Blur  1 for on 0 for off*/
+  --enable-blur: 1;
+  --blur-strength: 6px;
+  --custom-app-top-bar-height: 12px;
+}
+
+/* end of config header */
+
+body {
+  /*letter-spacing: -0.02ch;*/
+  --font-primary: "Griun Ahyoung's Handwrite In 2019";
+  --font-display: "Griun Ahyoung's Handwrite In 2019";
+  --font-code: "Cartograph CF";
+}
+
+[class^="page"] > [class^="container"] > [class^="scroller"] {
+  > [class^="wrapper"],
+  > [class^="container"] {
+    display: none;
+  }
+
+  > [class^="contentSection"] > [class^="content"] {
+    max-width: unset;
+
+    > [class^="content"] > [class^="container"] {
+      max-width: unset;
+
+      > [class]
+        > [class^="container"]
+        > [class^="container"]:has(> [class^="heroAssetWrapper"]) {
+        display: none;
+      }
+    }
+  }
+}
+
+.card__39ec2 {
+  overflow: hidden;
+
+  .imagePosition_ef9ae7,
+  .imageContainer_ef9ae7:not(svg) {
+    display: contents;
+
+    .contentImage__42bf5 {
+      position: absolute;
+      top: -4px !important;
+      left: -4px;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      max-width: unset !important;
+      mask-image: linear-gradient(165deg, black, transparent);
+      opacity: 0.5;
+      filter: blur(2px);
+    }
+  }
+
+  svg.imageContainer_ef9ae7 {
+    position: absolute;
+    top: -4px !important;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    contain: none !important;
+    mask: none;
+
+    > foreignObject {
+      mask: none !important;
+      contain: none !important;
+      width: 200px !important;
+      x: -70;
+    }
+  }
+
+  .header__39ec2 {
+    position: absolute;
+    right: var(--space-xs);
+
+    .headerText__39ec2 {
+      display: none;
+    }
+  }
+}
+
+/* only show the server list on hover */
+.guilds__5e434 {
+  width: var(--space-16);
+  transition: 0.25s ease-in-out;
+  opacity: 0;
+
+  &:hover {
+    width: var(--custom-guild-list-width);
+    opacity: 1;
+  }
+}
+
+/* heheh */
+.title_c38106,
+div[class^="winButtons"],
+a[href="https://support.discord.com"],
+div[class^="leading"] {
+  display: none;
+}
+
+.trailing_c38106 {
+  position: absolute;
+  top: 22px;
+  right: 430px;
+  z-index: 1000;
+  padding-right: var(--space-xs);
+  height: 32px;
+  flex-direction: row-reverse;
+  gap: var(--space-xs) !important;
+
+  > div[class^="clickable__"] {
+    width: 32px;
+  }
+}
+
+.base__5e434:has(
+    > .content__5e434
+      > .page__5e434
+      > .container__133bf
+      > section
+      > .upperContainer__9293f
+      > .toolbar__9293f
+      div[aria-label="New Group DM"]
+  )
+  .trailing_c38106 {
+  right: 48px !important;
+}
