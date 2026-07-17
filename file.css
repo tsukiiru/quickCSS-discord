@@ -19,31 +19,6 @@
 @import url(https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css);
 @import url("https://raw.githubusercontent.com/acheronx0577/Better-Compact-Command-Menu-With-Smooth-Transition/refs/heads/main/Better%20Compact%20Command%20Menu%20With%20Smooth%20Transition.css");
 
-/* config header */
-:root,
-.theme-dark {
-  /* if backgrounds are enabled this acts as a background tint*/
-  --window-tint: #0005;
-
-  /* Theme Background, replace with none if you want transparency*/
-  --theme-background-image: url("https://github.com/tsukiiru/quickCSS-discord/blob/main/Girls-Last-Tour-3.webp?raw=true");
-
-  /* Works best with background enabled ^ */
-  /* Blur  1 for on 0 for off*/
-  --enable-blur: 1;
-  --blur-strength: 6px;
-  --custom-app-top-bar-height: 12px;
-}
-
-/* end of config header */
-
-body {
-  /*letter-spacing: -0.02ch;*/
-  --font-primary: "Griun Ahyoung's Handwrite In 2019";
-  --font-display: "Griun Ahyoung's Handwrite In 2019";
-  --font-code: "Cartograph CF";
-}
-
 [class^="page"] > [class^="container"] > [class^="scroller"] {
   > [class^="wrapper"],
   > [class^="container"] {
